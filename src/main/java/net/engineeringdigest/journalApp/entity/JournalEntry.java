@@ -19,11 +19,13 @@ import java.util.Date;
 //@NoArgsConstructor
 //@AllArgsConstructor
 //lombok ka ek part continuos scan karta h annotations ko aur usko getter setter generate karta h
-@Data
-@ToString
-@EqualsAndHashCode
+//@ToString
+//@EqualsAndHashCode
 
+@Data
 public class JournalEntry {
+
+    @NonNull
     private String title;
     @Id
     private ObjectId id;
